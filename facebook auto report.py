@@ -1,86 +1,114 @@
-banner = '''
+class colors:
+    BIGreen = "\033[1;92m"
+    cyan = "\033[1;36m"
+    BWhite='\033[1;37m'
+    BPurple='\033[1;35m'
+    BRed='\033[1;31m'
+    On_IYellow='\033[0;103m'
 
-╔═══╦══╗─╔═══╦═══╦═══╦═══╦═══╦════╗╔════╦═══╦═══╦╗
-║╔══╣╔╗║─║╔═╗║╔══╣╔═╗║╔═╗║╔═╗║╔╗╔╗║║╔╗╔╗║╔═╗║╔═╗║║
-║╚══╣╚╝╚╗║╚═╝║╚══╣╚═╝║║─║║╚═╝╠╝║║╚╝╚╝║║╚╣║─║║║─║║║
-║╔══╣╔═╗║║╔╗╔╣╔══╣╔══╣║─║║╔╗╔╝─║║────║║─║║─║║║─║║║─╔╗
-║║──║╚═╝║║║║╚╣╚══╣║──║╚═╝║║║╚╗─║║────║║─║╚═╝║╚═╝║╚═╝║
-╚╝──╚═══╝╚╝╚═╩═══╩╝──╚═══╩╝╚═╝─╚╝────╚╝─╚═══╩═══╩═══╝
+print(colors.BIGreen + """
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣶⠖⠀⠀⠲⣶⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠋⠀⠀⠀⠀⠀⠀⠙⢿⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣾⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣷⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣾⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣷⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⣿⣿⣇⣤⠶⠛⣛⣉⣙⡛⠛⢶⣄⣸⣿⣿⣿⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀\033[1;92m⢀⣀⣿⣿⣿⡟⢁\033[1;31m⣴⣿⣿⣿⣿⣿⣿⣦\033[1;92m⡈⢿⣿⣿⣿⣀⡀\033[1;92m⠀⠀⠀⠀
+⠀⠀\033[1;92m⢠⣴⣿⣿⣿⣿⡟\033[1;31m⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\033[1;92m⡌⢿⣿⣿⣿⣿⣦⡄⠀\033[1;92m⠀
+⠀\033[1;92m⣴⣿⣿⡿⠿⢛⣻⡇\033[1;31m⢸⡟⠻⣿⣿⣿⣿⣿⡿⠟⢻⡇\033[1;92m⣸⣛⡛⠿⣿⣿⣿⣦\033[1;92m⠀
+\033[1;92m⢸⣿⡿⠋⠀⠀⢸⣿⣿\033[1;31m⡜⢧⣄⣀⣉⡿⣿⣉⣀⣠⣼\033[1;92m⢁⣿⣿⡇⠀⠀⠙⢿⣿⡆\033[1;92m
+\033[1;92m⣿⣿⠁⠀⠀⠀⠈⣿⣿\033[1;31m⡇⣿⡿⠛⣿⣵⣮⣿⡟⢻⡿\033[1;92m⢨⣿⣿⠀⠀⠀⠀⠈⣿⣿\033[1;92m
+\033[1;92m⢿⡟⠀⠀⠀⠀⠀⠘⣿⣷⣤⣄⡀\033[1;31m⣿⣿⣿⣿\033[1;92m⢁⣤⣶⣿⣿⠃⠀⠀⠀⠀⠀⣿⡟\033[1;92m
+\033[1;92m⠘⠇⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⡇\033[1;31m⢿⣿⣿⣿\033[1;92m⢸⣿⣿⠟⠁⠀⠀⠀⠀⠀ ⠻⠃\033[1;92m
+⠀⠀\033[1;92m⢀⡀⠀⠀⠀⠀⠀⠀⠀⢩⣦⣘⡘⠋⣛⣸⡍⠁⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀
+⠀⠀\033[1;92m⠘⢿⣷⣤⣤⣄⣤⣤⣶⣿⣿⣿⡿⢿⣿⣿⣿⣷⣤⣤⣠⣤⣴⣾⡿⠁\033[1;92m⠀⠀
+⠀⠀⠀⠀\033[1;92m⠉⠛⠿⠿⠿⡿⠿⠿⠛⠉⠀⠀⠉⠛⠿⠿⣿⠿⠿⠿⠛⠉\033[1;92m⠀⠀⠀⠀
+\033[1;37m╔═══════════════════════════════════╗\033[1;37m
+\033[1;37m║   \033[1;36m╔═╗╔═╗╔═╗╔═╗╔╗ ╔═╗╔═╗╦╔═        \033[1;37m║
+\033[1;37m║   \033[1;36m╠╣ ╠═╣║  ║╣ ╠╩╗║ ║║ ║╠╩╗        \033[1;37m║
+\033[1;37m║  \033[1;37m ╚  ╩ ╩╚═╝╚═╝╚═╝╚═╝╚═╝╩ ╩        \033[1;37m║
+\033[1;37m║   \033[1;37m╦═╗╔═╗╔═╗╔═╗╦═╗╔╦╗              \033[1;37m║
+\033[1;37m║   \033[1;35m╠╦╝║╣ ╠═╝║ ║╠╦╝ ║               \033[1;37m║
+\033[1;37m║   \033[1;35m╩╚═╚═╝╩  ╚═╝╩╚═ ╩ v1            \033[1;37m║
+\033[1;37m╚═══════════════════════════════════╝\033[1;31m
+\033[1;37m╔══════════════════════════════════════════════════╗
+\033[1;37m║\033[1;31mCREATED BY : MR.DARK HCKTVST                      \033[1;37m║
+\033[1;37m║\033[1;31mCREATED-TIME :- Monday, Dec 13, 2024         \033[1;37m     ║
+\033[1;37m║\033[1;31mGITHUB :- https://github.com/Darkness1268         \033[1;37m║
+\033[1;37m║\033[1;31mFACEBOOK :- https://www.facebook.com/MrDarkHcktvst\033[1;37m║
+\033[1;37m╚══════════════════════════════════════════════════╝
+\033[1;92m
+""")
 
-▒▒▒▒▒▒▒▒▒▒▒▄▄▄▄░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▒▒▒▒▒▒▒▒▄██████▒▒▒▒▒▄▄▄█▄▒▒▒▒▒▒▒▒▒▒
-▒▒▒▒▒▒▒▄██▀░░▀██▄▒▒▒▒████████▄▒▒▒▒▒▒
-▒▒▒▒▒▒███░░░░░░██▒▒▒▒▒▒█▀▀▀▀▀██▄▄▒▒▒
-▒▒▒▒▒▄██▌░░░░░░░██▒▒▒▒▐▌▒▒▒▒▒▒▒▒▀█▄▒
-▒▒▒▒▒███░░▐█░█▌░██▒▒▒▒█▌▒▒▒▒▒▒▒▒▒▒▀▌
-▒▒▒▒████░▐█▌░▐█▌██▒▒▒██▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▒▒▐████░▐░░░░░▌██▒▒▒█▌▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▒▒▒████░░░▄█░░░██▒▒▐█▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▒▒▒████░░░██░░██▌▒▒█▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▒▒▒████▌░▐█░░███▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▒▒▒▐████░░▌░███▒▒▒██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▒▒▒▒████░░░███▒▒▒▒█▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▒▒██████▌░████▒▒▒██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒▐████████████▒▒███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-▒█████████████▄████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-██████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-██████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-█████████████████▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-█████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+# Facebook Reporting Tool
 
-'''
+import requests  
+import json  
 
-print(banner)
+class FacebookAccountReporter:  
+    def __init__(self, access_token):  
+        self.access_token = access_token  
+        self.base_url = "https://graph.facebook.com/v13.0/me"  
 
-import requests
-import time
-from bs4 import BeautifulSoup
+    def get_account_data(self):  
+        params = {  
+            "access_token": self.access_token,  
+            "fields": "id,name,email,birthday,location"  
+        }  
+        response = requests.get(self.base_url, params=params)  
+        return response.json()  
 
-class FacebookAutoReport:
-    def __init__(self, username, password):
-        self.username = username
-        self.password = password
-        self.session = requests.Session()
-        self.login_url = 'https://www.facebook.com/login.php'
-        self.report_url = 'https://www.facebook.com/report.php'
+    def get_friends(self):  
+        params = {  
+            "access_token": self.access_token,  
+            "fields": "friends"  
+        }  
+        response = requests.get(self.base_url, params=params)  
+        return response.json()  
 
-    def login(self):
-        payload = {
-            'email': self.username,
-            'pass': self.password
-        }
-        response = self.session.post(self.login_url, data=payload)
-        if "c_user" in self.session.cookies:
-            print("Login successful")
-            return True
-        else:
-            print("Login failed")
-            return False
+    def get_posts(self):  
+        params = {  
+            "access_token": self.access_token,  
+            "fields": "posts"  
+        }  
+        response = requests.get(self.base_url, params=params)  
+        return response.json()  
 
-    def report(self, report_id):
-        payload = {
-            'id': report_id,
-            'reason': 'Spam',
-            'submit': 'Report'
-        }
-        response = self.session.post(self.report_url, data=payload)
-        if response.status_code == 200 and "Thank you for your report" in response.text:
-            print(f"Report submitted for ID: {report_id}")
-        else:
-            print(f"Failed to report ID: {report_id}")
+    def generate_report(self):  
+        account_data = self.get_account_data()  
+        friends = self.get_friends()  
+        posts = self.get_posts()  
 
-    def auto_report(self, report_ids):
-        for report_id in report_ids:
-            self.report(report_id)
-            time.sleep(2)  # Avoid rate limiting
+        report = {  
+            "Account Data": account_data,  
+            "Friends": friends,  
+            "Posts": posts  
+        }  
+
+        with open("facebook_account_report.json", "w") as f:  
+            json.dump(report, f, indent=4)  
+
+# Usage  
+if __name__ == "__main__":
+    access_token = input("Please enter your Facebook access token: ")  
+    reporter = FacebookAccountReporter(access_token)  
+    reporter.generate_report()
+
+
+def get_facebook_post(uid, post_id):
+    access_token = 'YOUR_ACCESS_TOKEN'
+    url = f'https://graph.facebook.com/v12.0/{post_id}?fields=message,created_time,from&access_token={access_token}'
+
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        post_data = response.json()
+        print(f"Post from: {post_data['from']['name']}")
+        print(f"Message: {post_data.get('message', 'No message available')}")
+        print(f"Created Time: {post_data['created_time']}")
+    else:
+        print(f"Error: {response.status_code} - {response.text}")
 
 if __name__ == "__main__":
-    username = input("Enter your Facebook username: ")
-    password = input("Enter your Facebook password: ")
-    report_ids = input("Enter IDs to report (comma-separated): ").split(',')
-
-    fb_auto_report = FacebookAutoReport(username, password)
-    if fb_auto_report.login():
-        fb_auto_report.auto_report(report_ids)
+    uid = input("Enter Facebook UID: ")
+    post_id = input("Enter Facebook Post ID: ")
+    get_facebook_post(uid, post_id)
